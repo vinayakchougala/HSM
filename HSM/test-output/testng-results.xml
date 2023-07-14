@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-14T08:18:30 IST" name="Default suite" finished-at="2023-07-14T08:18:30 IST" duration-ms="57">
+  <suite started-at="2023-07-14T10:39:24 IST" name="Default suite" finished-at="2023-07-14T10:39:24 IST" duration-ms="59">
     <groups>
     </groups>
-    <test started-at="2023-07-14T08:18:30 IST" name="Default test" finished-at="2023-07-14T08:18:30 IST" duration-ms="57">
+    <test started-at="2023-07-14T10:39:24 IST" name="Default test" finished-at="2023-07-14T10:39:24 IST" duration-ms="59">
       <class name="Punter.Script01Test">
-        <test-method signature="test2()[pri:0, instance:Punter.Script01Test@383bfa16]" started-at="2023-07-14T08:18:30 IST" name="test2" finished-at="2023-07-14T08:18:30 IST" duration-ms="11" status="FAIL">
+        <test-method signature="test2()[pri:0, instance:Punter.Script01Test@169e6180]" started-at="2023-07-14T10:39:24 IST" name="test2" finished-at="2023-07-14T10:39:24 IST" duration-ms="10" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
+              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "BROWSER" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "BROWSER" is null
 at Punter.Script01Test.test2(Script01Test.java:26)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
