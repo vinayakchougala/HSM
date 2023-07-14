@@ -20,12 +20,7 @@ public class Script01Test
   @Test
   public void test2() throws FileNotFoundException, IOException, ParseException
   {
-	    JSONParser jp = new JSONParser();
-		Object ob = jp.parse(new FileReader("./jsondata/lims.json"));
-		JSONObject map = (JSONObject) ob;
-
-		String BROWSER = (String) (map.get("browser"));
-		System.out.println(BROWSER);
+	 String BROWSER = System.getProperty("browser");
 		
 		if(BROWSER.equalsIgnoreCase("chrome"))
 		{
@@ -44,19 +39,13 @@ public class Script01Test
 		driver = new  ChromeDriver();
 		}
 		
-		String URL = (String) (map.get("url"));
-		System.out.println(URL);
-		
+	    String URL = System.getProperty("url");
+	
 		
 		 driver.get(URL);
 		 driver.manage().window().maximize();
 		 driver.close();
 		 
-	 /*WebDriver driver = new ChromeDriver();
-	 driver.get("https://www.amazon.in");
-	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	 
-	 driver.manage().window().maximize();
-	 driver.close();*/
+	
 }
 }
